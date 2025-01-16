@@ -1,0 +1,551 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Tap2iDVerifierSDK
+import Combine
+import CommonCrypto
+import CoreBluetooth
+import CoreData
+import CoreNFC
+import CryptoKit
+import CryptoTokenKit
+import Foundation
+import Security
+import Swift
+import SystemConfiguration
+@_exported import Tap2iDVerifierSDK
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc(DeviceGroupSettingEntity) public class DeviceGroupSettingEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(TransactionLogsEntity) public class TransactionLogsEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class NfcReaderHelper : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class KeychainSwift {
+  open var lastResultCode: Darwin.OSStatus
+  open var accessGroup: Swift.String?
+  open var synchronizable: Swift.Bool
+  open func get(_ key: Swift.String) -> Swift.String?
+  open func getData(_ key: Swift.String) -> Foundation.Data?
+  open func getBool(_ key: Swift.String) -> Swift.Bool?
+  @discardableResult
+  open func delete(_ key: Swift.String) -> Swift.Bool
+  @discardableResult
+  open func clear() -> Swift.Bool
+  @objc deinit
+}
+public enum EngagementConfig {
+  case nfc
+  case qrCode(Swift.String)
+  case nfcExternalReader
+}
+@_hasMissingDesignatedInitializers public class MdlAttributes {
+  public var firstName: Swift.String?
+  public var lastName: Swift.String?
+  public var birthDate: Swift.String?
+  public var issueDate: Swift.String?
+  public var expiryDate: Swift.String?
+  public var documentNumber: Swift.String?
+  public var portrait: Swift.String?
+  public var sex: Swift.String?
+  public var eyeColor: Swift.String?
+  public var residentAddress: Swift.String?
+  public var issuingCountry: Swift.String?
+  public var issuingAuthority: Swift.String?
+  public var unDistinguishingSign: Swift.String?
+  public var administrativeNumber: Swift.String?
+  public var height: Swift.String?
+  public var weight: Swift.String?
+  public var hairColor: Swift.String?
+  public var birthPlace: Swift.String?
+  public var portraitCaptureDate: Swift.String?
+  public var ageInYears: Swift.String?
+  public var ageBirthYear: Swift.String?
+  public var ageOverNN: Swift.Bool?
+  public var ageOver18: Swift.Bool?
+  public var ageOver21: Swift.Bool?
+  public var issuingJurisdiction: Swift.String?
+  public var nationality: Swift.String?
+  public var residentCity: Swift.String?
+  public var residentState: Swift.String?
+  public var residentPostalCode: Swift.String?
+  public var residentCountry: Swift.String?
+  public var biometricTemplateXX: Swift.String?
+  public var familyNameNationalCharacter: Swift.String?
+  public var givenNameNationalCharacter: Swift.String?
+  public var signatureUsualMark: Swift.String?
+  public var organizationName: Swift.String?
+  public var drivingPrivileges: [Tap2iDVerifierSDK.CredDrivingPrivilege]?
+  @objc deinit
+}
+public struct CredDrivingPrivilege {
+  public var codes: [Tap2iDVerifierSDK.CredDrivingPrivilegeCodes]
+  public var expiryDate: Swift.String?
+  public var issueDate: Swift.String?
+  public var vehicleCategoryCode: Swift.String?
+  public var restrictions: Swift.String? {
+    get
+  }
+}
+public struct CredDrivingPrivilegeCodes {
+  public var code: Swift.String?
+  public var sign: Swift.String?
+  public var value: Swift.String?
+}
+@_inheritsConvenienceInitializers @objc(IssuingAuthorityEntity) public class IssuingAuthorityEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(ProfileDetailsEntity) public class ProfileDetailsEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(DataToBeVerifiedEntity) public class DataToBeVerifiedEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension Tap2iDVerifierSDK.TransactionLogsEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Tap2iDVerifierSDK.TransactionLogsEntity>
+  @objc @NSManaged dynamic public var age: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var credentialType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var deviceEngagement: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var deviceId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var gender: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var issuingAuthority: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isSyncWithServer: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mdlDataHandlingError: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mdlTransactionResponse: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var readerProfile: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var transactionId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var transferMode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var credentialId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var endpointType: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verifierAppVersionNumber: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var biographicId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var certificateCheck: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var transactionTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var securityChecks: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var requestedAttributes: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var engagementInitStartTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var engagementInitEndTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var engagementDataParseStartTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var engagementDataParseEndTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var connectionStartTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var connectionEndTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var consentStartTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var consentEndTime: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataTransferStart: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataTransferEnd: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataValidationStart: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataValidationEnd: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+precedencegroup ExponentiationPrecedence {
+  associativity: left
+  higherThan: MultiplicationPrecedence
+  lowerThan: BitwiseShiftPrecedence
+}
+infix operator ** : ExponentiationPrecedence
+public enum VerificationStage {
+  case NFC_ENGAGEMENT
+  case QR_ENGAGEMENT
+  case CONNECTION
+  case SEND_MDOC_REQUEST
+  case READ_MDOC_RESPONSE
+  case PARSE_MDOC_RESPONSE
+  case VALIDATE_MDOC_RESPONSE
+  public static func == (a: Tap2iDVerifierSDK.VerificationStage, b: Tap2iDVerifierSDK.VerificationStage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Tap2iDVerifierSDK.ProfileDetailsEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Tap2iDVerifierSDK.ProfileDetailsEntity>
+  @objc @NSManaged dynamic public var address: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var customerName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var emailId: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var firstName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mobile: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension Tap2iDVerifierSDK.ProfileDetailsEntity : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+#if compiler(>=5.3) && $RetroactiveAttribute
+extension Swift.String : @retroactive Swift.Error {
+}
+#else
+extension Swift.String : Swift.Error {
+}
+#endif
+@_hasMissingDesignatedInitializers public class KeychainHelper {
+  public static func deviceIdentifier() -> Swift.String
+  @objc deinit
+}
+extension Tap2iDVerifierSDK.DeviceGroupSettingEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Tap2iDVerifierSDK.DeviceGroupSettingEntity>
+  @objc @NSManaged dynamic public var acceptedCredentials: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetoothMode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataDisplayTime: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dataTransferType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var deviceEngagementType: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var groupName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var relationshipDataToBeVerified: Tap2iDVerifierSDK.DataToBeVerifiedEntity? {
+    @objc get
+    @objc set
+  }
+}
+extension Tap2iDVerifierSDK.DeviceGroupSettingEntity : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
+public struct WebServiceSecurity {
+  public init()
+  public func decryptCipher(valueToDecrypt: Swift.String) -> Swift.String?
+}
+extension Tap2iDVerifierSDK.DataToBeVerifiedEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Tap2iDVerifierSDK.DataToBeVerifiedEntity>
+  @objc @NSManaged dynamic public var id: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateOfBirth: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var gender: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var portrait: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var firstName: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var lastName: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateOfIssue: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var dateOfExpire: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var issuingAuthority: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var licenseNumber: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var residentCity: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var residentState: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var residentPostalCode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var givenNames: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sex: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var nationality: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var birthPlace: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var residentAddress: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var residentCountry: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var documentNumber: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var issuingCountry: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var issuingJurisdiction: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var administrativeNumber: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var portraitCaptureDate: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var signatureUsualMark: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var height: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var weight: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var eyeColor: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var hairColor: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ageOver18: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ageOver21: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ageInYears: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ageBirthYear: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var vehicleCategoryCode: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var codes: Swift.Bool {
+    @objc get
+    @objc set
+  }
+}
+extension Tap2iDVerifierSDK.DataToBeVerifiedEntity : Swift.Identifiable {
+  public typealias ID = Swift.Int64
+}
+public protocol Tap2iDVerifySDKDelegate : AnyObject {
+  func onVerificationStageStarted(stage: Tap2iDVerifierSDK.VerificationStage)
+  func onVerificationStageError(stage: Tap2iDVerifierSDK.VerificationStage?, error: Tap2iDVerifierSDK.CoreCredenceErrorStruct?)
+  func onVerificationStageCompleted(stage: Tap2iDVerifierSDK.VerificationStage)
+  func onVerificationCompleted(result: Tap2iDVerifierSDK.MdlAttributes, validationResult: [Tap2iDVerifierSDK.CoreCredenceErrorStruct])
+}
+extension ObjectiveC.NSObject : Any {
+}
+@_hasMissingDesignatedInitializers public class Tap2iDVerifySDK {
+  public static let shared: Tap2iDVerifierSDK.Tap2iDVerifySDK
+  public func initSdk(config: Tap2iDVerifierSDK.CoreSdkConfig, initResult: @escaping (Swift.String?, Swift.String?, Swift.String?) -> Swift.Void)
+  public func verifyMdoc(engagementConfig: Tap2iDVerifierSDK.EngagementConfig, delegate: (any Tap2iDVerifierSDK.Tap2iDVerifySDKDelegate)?, readerDelegate: (any Tap2iDVerifierSDK.NfcExternalReaderDelegate)? = nil) -> (any Swift.Error)?
+  public func stopMonitoring()
+  @objc deinit
+}
+public struct CoreCredenceErrorStruct : Swift.Error {
+  public var component: Swift.String
+  public var componentCode: Swift.Int
+  public var subType: Swift.String
+  public var subTypeCode: Swift.Int
+  public var combinedCode: Swift.Int
+  public var errorMessage: Swift.String
+  public var messageForVerifyPortal: Swift.String
+  public var showPortrait: Swift.Bool
+}
+public protocol NfcExternalReaderDelegate : AnyObject {
+  func didDetectReaders()
+  func didDisconnectFromReader()
+  func didDetectSmartCard()
+  func didDisconnectFromSmartCard()
+}
+extension Swift.String {
+  public var data: Foundation.Data? {
+    get
+  }
+}
+public struct CoreSdkConfig {
+  public var apiKey: Swift.String
+  public var enableLogging: Swift.Bool
+  public init(apiKey: Swift.String)
+}
+extension Tap2iDVerifierSDK.IssuingAuthorityEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Tap2iDVerifierSDK.IssuingAuthorityEntity>
+  @objc @NSManaged dynamic public var id: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stateName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var stateLogoFile: Swift.String? {
+    @objc get
+    @objc set
+  }
+}
+extension Tap2iDVerifierSDK.IssuingAuthorityEntity : Swift.Identifiable {
+  public typealias ID = Swift.Int64
+}
+extension Tap2iDVerifierSDK.VerificationStage : Swift.Equatable {}
+extension Tap2iDVerifierSDK.VerificationStage : Swift.Hashable {}

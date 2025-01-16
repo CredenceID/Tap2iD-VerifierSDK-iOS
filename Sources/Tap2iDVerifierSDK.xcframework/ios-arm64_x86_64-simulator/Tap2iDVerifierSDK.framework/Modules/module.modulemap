@@ -1,0 +1,6 @@
+framework module Tap2iDVerifierSDK {
+  umbrella header "Tap2iDVerifierSDK.h"
+  export *
+
+  module * { export * }
+}
