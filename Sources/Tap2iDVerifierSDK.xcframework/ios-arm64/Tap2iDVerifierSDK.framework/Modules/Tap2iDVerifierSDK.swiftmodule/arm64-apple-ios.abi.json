@@ -16216,6 +16216,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -16958,8 +16968,7 @@
         "mangledName": "$s17Tap2iDVerifierSDK18WebServiceSecurityV",
         "moduleName": "Tap2iDVerifierSDK",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -18787,6 +18796,23 @@
       },
       {
         "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19967,6 +19993,13 @@
       "value": "\"Your phone verifier has reached maximum transaction limit. Please contact your company administrator or Credence ID admin for further support\""
     },
     {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Utility\/UtilityManager.swift",
+      "kind": "StringLiteral",
+      "offset": 168,
+      "length": 7,
+      "value": "\"1.0.2\""
+    },
+    {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/Apdu.swift",
       "kind": "IntegerLiteral",
       "offset": 276,
@@ -20263,35 +20296,35 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 5810,
+      "offset": 6065,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14443,
+      "offset": 15026,
       "length": 12,
       "value": "\"NFC_STATIC\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14481,
+      "offset": 15064,
       "length": 16,
       "value": "\"NFC_NEGOTIATED\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14516,
+      "offset": 15099,
       "length": 9,
       "value": "\"QR_CODE\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 14543,
+      "offset": 15126,
       "length": 16,
       "value": "\"TAP_TO_PRESENT\""
     },
@@ -20914,50 +20947,50 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 847,
+      "offset": 862,
       "length": 46,
       "value": "\"Unresolved error \""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 873,
+      "offset": 888,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 892,
-      "length": 2,
+      "offset": 907,
+      "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1018,
+      "offset": 1048,
       "length": 15,
       "value": "\"PhoneVerifier\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1157,
+      "offset": 1202,
       "length": 46,
       "value": "\"Unresolved error \""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1183,
+      "offset": 1228,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Database\/CoreDataManager.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
-      "length": 2,
+      "offset": 1247,
+      "length": 17,
       "value": "\"\""
     },
     {
@@ -22901,6 +22934,20 @@
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/BLEPeripheralHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1318,
+      "length": 40,
+      "value": "\"Bytes received = \""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/BLEPeripheralHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1357,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/BLEPeripheralHelper.swift",
       "kind": "IntegerLiteral",
       "offset": 1221,
       "length": 1,
@@ -24022,161 +24069,161 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 681,
+      "offset": 641,
       "length": 30,
       "value": "\"api\/phoneNumber\/generateTOTP\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 740,
+      "offset": 700,
       "length": 29,
       "value": "\"api\/phoneNu mber\/verifyTOTP\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 800,
+      "offset": 760,
       "length": 33,
       "value": "\"device\/app\/saveSoftwareEndpoint\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 863,
+      "offset": 823,
       "length": 35,
       "value": "\"midDevice\/saveEndpointTransaction\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 944,
+      "offset": 904,
       "length": 39,
       "value": "\"midDevice\/saveBulkEndpointTransaction\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 976,
       "length": 29,
       "value": "\"device\/push\/\/savePushyToken\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1082,
+      "offset": 1042,
       "length": 27,
       "value": "\"device\/getProfileSettings\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1147,
+      "offset": 1107,
       "length": 29,
       "value": "\"device\/push\/acknowledgement\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1214,
+      "offset": 1174,
       "length": 30,
       "value": "\"customer\/deviceProfileUpdate\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1283,
+      "offset": 1243,
       "length": 29,
       "value": "\"device\/moveDeviceToCustomer\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1349,
+      "offset": 1309,
       "length": 29,
       "value": "\"\/customer\/upgradeFromDevice\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1418,
+      "offset": 1378,
       "length": 33,
       "value": "\"\/customer\/checkSubscriptionType\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1486,
+      "offset": 1446,
       "length": 26,
       "value": "\"\/device\/unenrollEndpoint\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1557,
+      "offset": 1517,
       "length": 42,
       "value": "\"\/relyingParty\/getDeviceTrustMgmtSettings\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1632,
+      "offset": 1592,
       "length": 29,
       "value": "\"api\/phoneNumber\/deviceLogin\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1694,
+      "offset": 1654,
       "length": 20,
       "value": "\"api\/forgotpassword\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1755,
+      "offset": 1715,
       "length": 40,
       "value": "\"api\/phoneNumber\/savePasswordFromDevice\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1790,
       "length": 22,
       "value": "\"sdk\/verifyLicenseKey\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1920,
+      "offset": 1880,
       "length": 15,
       "value": "\"X-Device-Type\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 1935,
       "length": 9,
       "value": "\"iOS-SDK\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2051,
+      "offset": 2011,
       "length": 15,
       "value": "\"X-App-Version\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2177,
+      "offset": 2137,
       "length": 20,
       "value": "\"X-OS-Build-Version\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2344,
+      "offset": 2304,
       "length": 1,
       "value": "5"
     },
@@ -24571,6 +24618,62 @@
       "offset": 1135,
       "length": 25,
       "value": "\"https:\/\/www.google.com\/\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 183,
+      "length": 8,
+      "value": "\"NOTICE\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 209,
+      "length": 7,
+      "value": "\"DEBUG\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 7,
+      "value": "\"TRACE\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 6,
+      "value": "\"INFO\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 282,
+      "length": 7,
+      "value": "\"ERROR\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 309,
+      "length": 9,
+      "value": "\"WARNING\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 7,
+      "value": "\"FAULT\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/LogLevel.swift",
+      "kind": "StringLiteral",
+      "offset": 364,
+      "length": 10,
+      "value": "\"CRITICAL\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/NfcDataRetrievalAddress.swift",
@@ -25975,7 +26078,7 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIHelpers\/WebServiceSecurity.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 231,
       "length": 2,
       "value": "16"
     },
@@ -26104,6 +26207,20 @@
       "offset": 7837,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/CLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 540,
+      "length": 9,
+      "value": "\"general\""
+    },
+    {
+      "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/CLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 698,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Nder\/NdefRecord.swift",
