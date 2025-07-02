@@ -27,9 +27,36 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
+public struct CredDrivingPrivilege {
+  public var codes: [Tap2iDVerifierSDK.CredDrivingPrivilegeCodes]
+  public var expiryDate: Swift.String?
+  public var issueDate: Swift.String?
+  public var vehicleCategoryCode: Swift.String?
+  public var restrictions: Swift.String? {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class NfcReaderHelper : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
+}
+public struct CredDrivingPrivilegeCodes {
+  public var code: Swift.String?
+  public var sign: Swift.String?
+  public var value: Swift.String?
+}
+public struct ValidationResult {
+  public let isIssuerSignedAuthenticated: Swift.Bool
+  public let isDeviceSignedAuthenticated: Swift.Bool
+  public let issuerInfo: Swift.String
+  public let isIssuerVerified: Swift.Bool
+  public let isMsoSigned: Swift.Bool
+  public let validationErrors: [Tap2iDVerifierSDK.CoreCredenceErrorStruct]
+}
+extension Tap2iDVerifierSDK.ValidationResult : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers open class KeychainSwift {
   open var lastResultCode: Darwin.OSStatus
@@ -87,20 +114,6 @@ public enum EngagementConfig {
   public var organizationName: Swift.String?
   public var drivingPrivileges: [Tap2iDVerifierSDK.CredDrivingPrivilege]?
   @objc deinit
-}
-public struct CredDrivingPrivilege {
-  public var codes: [Tap2iDVerifierSDK.CredDrivingPrivilegeCodes]
-  public var expiryDate: Swift.String?
-  public var issueDate: Swift.String?
-  public var vehicleCategoryCode: Swift.String?
-  public var restrictions: Swift.String? {
-    get
-  }
-}
-public struct CredDrivingPrivilegeCodes {
-  public var code: Swift.String?
-  public var sign: Swift.String?
-  public var value: Swift.String?
 }
 @_inheritsConvenienceInitializers @objc(IssuingAuthorityEntity) public class IssuingAuthorityEntity : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -489,7 +502,7 @@ public protocol Tap2iDVerifySDKDelegate : AnyObject {
   func onVerificationStageStarted(stage: Tap2iDVerifierSDK.VerificationStage)
   func onVerificationStageError(stage: Tap2iDVerifierSDK.VerificationStage?, error: Tap2iDVerifierSDK.CoreCredenceErrorStruct?)
   func onVerificationStageCompleted(stage: Tap2iDVerifierSDK.VerificationStage)
-  func onVerificationCompleted(result: Tap2iDVerifierSDK.MdlAttributes, validationResult: [Tap2iDVerifierSDK.CoreCredenceErrorStruct])
+  func onVerificationCompleted(mdocAttributes: Tap2iDVerifierSDK.MdlAttributes, verificationResult: Tap2iDVerifierSDK.ValidationResult)
 }
 extension ObjectiveC.NSObject : Any {
 }
