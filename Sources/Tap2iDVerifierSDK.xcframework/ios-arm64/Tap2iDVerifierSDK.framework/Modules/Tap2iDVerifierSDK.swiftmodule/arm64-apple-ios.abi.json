@@ -20358,7 +20358,7 @@
       "kind": "StringLiteral",
       "offset": 168,
       "length": 7,
-      "value": "\"1.0.2\""
+      "value": "\"1.0.4\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/Apdu.swift",
@@ -20657,42 +20657,42 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 492,
+      "offset": 542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 6065,
+      "offset": 6179,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15026,
+      "offset": 15140,
       "length": 12,
       "value": "\"NFC_STATIC\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15064,
+      "offset": 15178,
       "length": 16,
       "value": "\"NFC_NEGOTIATED\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15099,
+      "offset": 15213,
       "length": 9,
       "value": "\"QR_CODE\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/NFC\/Apdu\/NFCAPDUHelper.swift",
       "kind": "StringLiteral",
-      "offset": 15126,
+      "offset": 15240,
       "length": 16,
       "value": "\"TAP_TO_PRESENT\""
     },
@@ -20874,14 +20874,14 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Model\/TransactionLogRequestModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5284,
+      "offset": 5398,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/Model\/TransactionLogRequestModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5314,
+      "offset": 5428,
       "length": 1,
       "value": "0"
     },
@@ -24556,56 +24556,56 @@
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 5282,
+      "offset": 5343,
       "length": 16,
       "value": "\"Profile Update\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 5340,
+      "offset": 5401,
       "length": 63,
       "value": "\"New settings received. Please wait while we apply the changes\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5454,
+      "offset": 5515,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5515,
+      "offset": 5576,
       "length": 3,
       "value": "113"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "IntegerLiteral",
-      "offset": 5550,
+      "offset": 5611,
       "length": 3,
       "value": "102"
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 5596,
+      "offset": 5657,
       "length": 84,
       "value": "\"This device has been unenrolled from the web portal. Pressing OK will log you out.\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 5720,
+      "offset": 5781,
       "length": 81,
       "value": "\"This device has been deleted from the web portal. Pressing OK will log you out.\""
     },
     {
       "filePath": "\/Users\/cybadmin\/Desktop\/Tap2iD Mobile\/iOS\/SDK\/Framework\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Other\/PushNotificationService.swift",
       "kind": "StringLiteral",
-      "offset": 5854,
+      "offset": 5915,
       "length": 41,
       "value": "\"Endpoint not registered on MID Connect.\""
     },
