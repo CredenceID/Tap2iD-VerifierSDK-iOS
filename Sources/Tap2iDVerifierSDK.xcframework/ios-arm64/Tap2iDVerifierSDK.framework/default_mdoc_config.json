@@ -1,0 +1,37 @@
+{
+    "configuration_id": "default_age_check_config",
+    "doc_requests":
+    [
+        {
+            "doc_type": "org.iso.18013.5.1.mDL",
+            "display_name": "Mobile Driving License",
+            "namespaces":
+            [
+                {
+                    "name": "org.iso.18013.5.1",
+                    "attributes":
+                    [
+                        {
+                            "id": "portrait",
+                            "display_label": "Portrait Photo",
+                            "data_type": "image",
+                            "intent_to_retain": false
+                        },
+                        {
+                            "id": "age_over_21",
+                            "display_label": "Age Over 21",
+                            "data_type": "boolean",
+                            "intent_to_retain": false
+                        },
+                        {
+                            "id": "issuing_authority",
+                            "display_label": "Issuing Authority",
+                            "data_type": "string",
+                            "intent_to_retain": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

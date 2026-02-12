@@ -16,5 +16,3 @@ FOUNDATION_EXPORT double Tap2iDVerifierSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char Tap2iDVerifierSDKVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Tap2iDVerifierSDK/PublicHeader.h>
-
-
