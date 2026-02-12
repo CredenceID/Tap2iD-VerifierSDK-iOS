@@ -10,51 +10,51 @@
 		</data>
 		<key>Headers/Tap2iDVerifierSDK.h</key>
 		<data>
-		rZqk8A835is8QfLhw+46AFuxhpU=
+		8PQ+Yu8qmTHXTzS/TeVTsZVgeBQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VXvTCSkAaIV11C3FsezYBQoMKQM=
+		mJTh+QkwqA9llRGsWBJ75WYmBTg=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		LOb8OqJRfnwNvMKllzypX2kaMQE=
+		Pw7mTPNh5UuUhh4/d6nQPcnzBOA=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3x25H3yVEHM0Qpg1O0+xP9EdSgk=
+		BGJc1vMltSOk14YE+utzN6zCSdc=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Vt8kRUUvXkNVvcHnHlid1cQltjc=
+		NIXZkDcgKN8YfEoJn3bMKZlcpeU=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3x25H3yVEHM0Qpg1O0+xP9EdSgk=
+		BGJc1vMltSOk14YE+utzN6zCSdc=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		WJJqqt3hbcyT9CFeoFm1bIbX/3w=
+		4ESB+8H0Q/qZdGpKRYidA4i+BQc=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		LOb8OqJRfnwNvMKllzypX2kaMQE=
+		Pw7mTPNh5UuUhh4/d6nQPcnzBOA=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		MSmtrWeiPNhOu1U6Med7h15TDyo=
+		zHWHmOaoa4RhCjj03VnYRBBnR0k=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KHcunD6FwfU6mlew2YXOaut/Jf4=
+		TZ7Khiq0CrxZXd1B/sY8foSrWh0=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MSmtrWeiPNhOu1U6Med7h15TDyo=
+		zHWHmOaoa4RhCjj03VnYRBBnR0k=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DvNvGvCnKfpZf+XlsmF4HNEMi2s=
+		HRLERFp9DCXX5RSKskfnuEUyeBw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,15 +62,19 @@
 		</data>
 		<key>PhoneVerifier.momd/PhoneVerifier.mom</key>
 		<data>
-		AGkaoePFzR9DozJuk9tiq5I0DTI=
+		vWkddRxzKfjrVR/DYj4EdnyoUDY=
 		</data>
 		<key>PhoneVerifier.momd/VersionInfo.plist</key>
 		<data>
-		RaOEN7dMjZ6oo/vBzKdR/W1NAoc=
+		m3aeYE3eEiAbdxqHY6ur96MPTjk=
 		</data>
 		<key>credenceid_mdl_reader_cert.pem</key>
 		<data>
 		uBH13eOaYS/BfWpn/Zdsr/mzGCM=
+		</data>
+		<key>default_mdoc_config.json</key>
+		<data>
+		evgep9vWkXBTW0OkbwrPjbWfTjo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -86,77 +90,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u4MB/hcEvPdhN6zwteCnqKb2PAY5yup3O+LaYZlbQco=
+			ZlCLXARt+aRbDj4yupZXZCbzrpZSXYHNJwIWB3Y8atQ=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bf5FhRmoPLIIzalG4ZdYOYqoPm7F1FIHwYtVECnMDwE=
+			KBYQ/QXPYJQ3GisLtVJYn3oX2/yKxWHjTdKuZEOTQ8E=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UJaAhzQdESaSi/d1fg7mSGU86i9Z3LfwaX+7o0/+pNI=
+			Zooq4hmjeRqaZJICSfsGIMYlFZ+o2vEKzqju7ykt8Is=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lxbHYwewj8+xoh2FxbUtAB3nb0NsjA6oAuQTLGXLpEo=
+			B9TMkcaU19chJMTsQBWggz1L3XFpIPTdYl8/+PygaRY=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UJaAhzQdESaSi/d1fg7mSGU86i9Z3LfwaX+7o0/+pNI=
+			Zooq4hmjeRqaZJICSfsGIMYlFZ+o2vEKzqju7ykt8Is=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			swss2azl0FuM6liY0WIlUjYs+ZgLuC9fE+qAIWISHaQ=
+			EmEY0Mo2FGgaMzxZQvqL1pAZbCqAstuLErQxan80oYw=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bf5FhRmoPLIIzalG4ZdYOYqoPm7F1FIHwYtVECnMDwE=
+			KBYQ/QXPYJQ3GisLtVJYn3oX2/yKxWHjTdKuZEOTQ8E=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8o38GXsdNg5SiGW3WjC5joZYACwNUpm4urRykUCoLKM=
+			Ibo5gfxrsWfuyT859Oftl85s+MEStLKq7GYMWbD7jRQ=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MMUOJ1iweHTvklpYehGj7T/AK38sAyl6tU83PglsrqA=
+			vH/cZ6Ewt2VFKs976P9f545IWgjIpw157MjcFnxEQJ0=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8o38GXsdNg5SiGW3WjC5joZYACwNUpm4urRykUCoLKM=
+			Ibo5gfxrsWfuyT859Oftl85s+MEStLKq7GYMWbD7jRQ=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iuqbl3NttcRScKXqrZCxHDb8dGvv66wls6z1lPrhEAE=
+			zpuFCreTz1hKTigxTLvYHb/hjJt+XP4vn20AnP1RAOc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -170,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEp1GEw9CSMmeNTmFLHBM/ZF1DTibEyBq5Do8B5uAgA=
+			IIrrf6GLsrSQs2T6Eci/fR+hdKzPWKPBMyWjuaiAbHs=
 			</data>
 		</dict>
 		<key>PhoneVerifier.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dxbezc+2VZ/mreuFwRAig4QD2h0D7t6DkGJrGTCa3qA=
+			f3DpaiSHYqJRtVW+IjANz1UEr4yWo6px2tg1qGAP1g8=
 			</data>
 		</dict>
 		<key>credenceid_mdl_reader_cert.pem</key>
@@ -185,6 +189,13 @@
 			<key>hash2</key>
 			<data>
 			IlkOM8UhCXN1Ds8SuwY1i0cyw8H6YOo9H99HOM7VZ5E=
+			</data>
+		</dict>
+		<key>default_mdoc_config.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FdjqXfG1HDjkwuV+DvLtcVRRaSgtVtoLkmxnXTHkM9s=
 			</data>
 		</dict>
 	</dict>
