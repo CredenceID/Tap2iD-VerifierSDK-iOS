@@ -19,7 +19,9 @@ To add the Tap2iD SDK to your Xcode project using Swift Package Manager:
 1. **Open Xcode**: Launch your project in Xcode.
 2. **Add Package Dependency**:
    - Go to `File > Swift Packages > Add Package Dependency`.
-   - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-Swift.git` in the repository URL field.
+   - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-Swift.git`
+   - For Advance Profile enter 'https://github.com/CredenceID/Tap2iD-VerifierSDK-ios.git'
+   -  in the repository URL field.
 3. **Specify Version**:
    - Choose "Up to Next Major" and specify `X.X.X` as the earliest version.
 4. **Add to Target**:
