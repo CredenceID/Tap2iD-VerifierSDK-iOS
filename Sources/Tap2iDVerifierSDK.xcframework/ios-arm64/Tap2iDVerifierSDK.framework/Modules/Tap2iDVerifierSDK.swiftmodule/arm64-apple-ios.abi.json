@@ -19,6 +19,26 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Tap2iDVerifierSDK"
       },
       {
@@ -9057,6 +9077,13 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/yashshah\/Development\/CredenceGithub\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/BarcodeClassification\/Domain\/DataProfileFilter.swift",
+      "kind": "StringLiteral",
+      "offset": 3044,
+      "length": 23,
+      "value": "\"org.iso.18013.5.1.mDL\""
+    },
     {
       "filePath": "\/Users\/yashshah\/Development\/CredenceGithub\/Tap2iDVerifierSDK-Swift\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/BarcodeClassification\/Data\/CidPDF417ClassifierWrapper.swift",
       "kind": "StringLiteral",

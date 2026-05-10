@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		e00paKMhKMiS4MXPsNNDjOub0Xs=
+		YCbXVaWiffw4VZ1SwIk+uwIqoAg=
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uj/jtZAfxBtW6A0Irdajt5OmoeQ=
+		g4Q9xoYdk4T8FyCGFWpjCxrZvrc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>classification_config.json</key>
 		<data>
-		wFrGv9WGGx2pEKAmycnG6yqUjBk=
+		v9PlBd88RGy8donxSaktTJvm0sI=
 		</data>
 		<key>credenceid_mdl_reader_cert.pem</key>
 		<data>
@@ -81,7 +81,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RFO1F+o562e86M02X42zfPcdKKmiTFToioXfJpWL0Ec=
+			t0zGYBj/SfZ4fRrph3qMAng8dF0iCRZp74yfkQs/fNs=
 			</data>
 		</dict>
 		<key>Modules/Tap2iDVerifierSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aU0YjAM9L4rGknDgNIUvlWHbzYvcVeX+ijeCTa9LrKI=
+			2WGZtElEpwiZJpHQlxC6N1RjTrgg+U85AEttUD28V3A=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fiuiBE13DLchQIgz5V6e3UPETUYm1q0XHDrM7zZB0Rg=
+			l+HVJPkvsgLbJiKeYafU3NqUwceflEBdegUT0vK5b7I=
 			</data>
 		</dict>
 		<key>credenceid_mdl_reader_cert.pem</key>
