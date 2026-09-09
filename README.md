@@ -1,73 +1,75 @@
 # Tap2iD SDK for iOS
 
+Swift Package distribution of `Tap2iDVerifierSDK.xcframework`.
+
+**Current release: `2.0.1`**
+
 ## Overview
 
-The Tap2iD SDK complies with the ISO/IEC 18013-5:2021 standard, facilitating digital representation for mobile-based credentials, including mobile driver's licenses (mDL). 
+The Tap2iD SDK complies with the ISO/IEC 18013-5:2021 standard, facilitating digital representation for mobile-based credentials, including mobile driver's licenses (mDL). It also verifies the PDF417 barcode on the back of a physical driver's licence.
 
 ## System Requirements
 
 - **Supported iOS Versions**: iOS 17.0 and later
 - **Dependencies**: Xcode 15.0 or later
 - **Hardware Requirements**: iPhone 11 or newer with NFC enabled
+- **Build machine**: simulator builds require an **Apple Silicon** Mac (see [Simulator architecture](#simulator-architecture))
 
 ## Installation
 
 ### Swift Package Manager
 
-To add the Tap2iD SDK to your Xcode project using Swift Package Manager:
-
 1. **Open Xcode**: Launch your project in Xcode.
 2. **Add Package Dependency**:
-   - Go to `File > Add Package Dependency`.
-   - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-iOS.git` in the box with the "Search or enter package URL" placeholder.
-   - Then select `tap2id-verifiersdk-ios` from the available package products.
+   - Go to `File > Add Package Dependencies…`.
+   - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-iOS.git`.
 3. **Specify Version**:
-   - Choose "Up to Next Major" and specify `X.X.X` as the earliest version.
+   - Choose **Exact Version** and enter `2.0.1`.
+   - Pin exactly rather than by range, so the binary your app builds against is reproducible.
 4. **Add to Target**:
-   - Select "Tap2iD-VerifierSDK-Swift" when Xcode resolves the version and add it to your app target.
+   - Select the **`Tap2iD-VerifyerSDK-Swift`** library product and add it to your app target.
+   - Import it in code as `import Tap2iDVerifierSDK`.
 
 For troubleshooting, refer to Apple's [Adding Package Dependencies to Your App](https://developer.apple.com/library/archive/documentation/Xcode/Adding_Package_Dependencies_to_Your_App/) guide.
+
+### Simulator architecture
+
+From **2.0.1** the simulator slice is **arm64 only**.
+
+| Mac | Device builds | Simulator builds |
+|---|---|---|
+| Apple Silicon | supported | supported |
+| Intel | supported | **not supported** |
+
+On an Intel Mac a simulator build fails to link. Build to a physical device, or use an Apple Silicon Mac. SDK 2.0.0 and earlier shipped a universal simulator slice, so this is a change if you are upgrading.
 
 ## Enabling BLE and NFC Support
 
 ### Bluetooth Support
 
-1. **Open `Info.plist`**:
-   - Locate and open the `Info.plist` file in your Xcode project.
-
+1. **Open `Info.plist`**
 2. **Add Bluetooth Usage Description Keys**:
-   Include the following keys to request Bluetooth permissions:
 
    ```xml
    <key>NSBluetoothAlwaysUsageDescription</key>
    <string>Your app requires Bluetooth access to connect to nearby devices even in the background.</string>
-   
+
    <key>NSBluetoothPeripheralUsageDescription</key>
    <string>Your app needs to advertise and communicate with other Bluetooth devices.</string>
-   
+
    <key>NSBluetoothWhenInUseUsageDescription</key>
    <string>Your app requires Bluetooth access to connect to nearby devices while in use.</string>
+   ```
 
+### NFC Support
 
-# NFC Support
+#### Enable NFC Capability
 
-NFC support has been detailed separately to ensure clarity and focus on each individual technology's configuration. Below are the steps to enable NFC support for the Tap2iD Verifier-SDK.
+1. Select your project in the Project Navigator.
+2. Select your app target.
+3. In **Signing & Capabilities**, click **+** and add **Near Field Communication Tag Reading**.
 
-## Enable NFC Capability
-
-1. **Select Your Project**:
-   - Open Xcode and select your project in the Project Navigator.
-
-2. **Choose Your Target**:
-   - In the Targets list, select your app target.
-
-3. **Add NFC Capability**:
-   - Go to the "Signing & Capabilities" tab.
-   - Click the "+" button and choose "Near Field Communication Tag Reading" from the list of available capabilities.
-
-## Modify `Info.plist`
-
-To request NFC permissions, you need to update your `Info.plist` file. Add the following entries to explain why your app needs NFC access:
+#### Modify `Info.plist`
 
 ```xml
 <key>NFCReaderUsageDescription</key>
@@ -82,122 +84,161 @@ To request NFC permissions, you need to update your `Info.plist` file. Add the f
 <array>
     <string>12FC</string>
 </array>
-
 ```
-
 
 ## Example Usage
 
-Here is an example of how to use the Tap2iD Verify SDK:
-
 ```swift
-
 import Tap2iDVerifierSDK
 
 class TestSDK {
 
-    // Initializes the SDK with the provided API key and returns any error or message via the result closure
-    func initSDK(apiKey: String, result: @escaping (String?, String?, String?) -> Void) {
-        // Create the configuration object using the provided API key
+    // Initialise the SDK. The callback receives a LicenseKeyVerificationResult
+    // carrying isValid, expiryDate, profileName and error.
+    func initSDK(apiKey: String, result: @escaping (LicenseKeyVerificationResult) -> Void) {
         let sdkConfig = CoreSdkConfig(apiKey: apiKey)
-
-        // Initialize the SDK with the configuration and handle any error or message returned
-        Tap2iDVerifySDK.shared.initSdk(config: sdkConfig) { (error, message, profile) in
-            // Execute the result closure with the error or message
-            result(error, message, profile)
+        Tap2iDVerifySDK.shared.initSdk(config: sdkConfig) { licenseResult in
+            result(licenseResult)
         }
     }
 
-    // Starts the QR code engagement flow and returns any error via the result closure
+    // QR code engagement. Progress and the result arrive on the delegate;
+    // the return value is non-nil only if verification could not be started.
     func startQrEngagement(capturedQr: String, result: @escaping (Error?) -> Void) {
-        // Begin the verification process using the captured QR code
-        let error = Tap2iDVerifySDK.shared.verifyMdoc(engagementConfig: .qrCode(capturedQr), delegate: self)
-        
-        // If there's an error, pass it back via the result closure
-        if let error = error {
+        if let error = Tap2iDVerifySDK.shared.verifyMdoc(
+            engagementConfig: .qrCode(capturedQr),
+            delegate: self
+        ) {
             result(error)
         }
     }
 
-    // Starts the NFC engagement flow using native NFC functionality
+    // Native NFC engagement.
     func startNativeNfcEngagement(result: @escaping (Error?) -> Void) {
-        // Begin the NFC verification process
-        let error = Tap2iDVerifySDK.shared.verifyMdoc(engagementConfig: .nfc, delegate: self)
-        
-        // If there's an error, pass it back via the result closure
-        if let error = error {
+        if let error = Tap2iDVerifySDK.shared.verifyMdoc(
+            engagementConfig: .nfc,
+            delegate: self
+        ) {
             result(error)
         }
     }
 
-    // Starts the external NFC reader engagement flow and returns any error via the result closure
+    // External NFC reader engagement.
     func startExternalNfcReaderEngagement(result: @escaping (Error?) -> Void) {
-        // Begin the NFC verification process with an external NFC reader
-        let error = Tap2iDVerifySDK.shared.verifyMdoc(engagementConfig: .nfcExternalReader, delegate: self, readerDelegate: self)
-        
-        // If there's an error, pass it back via the result closure
-        if let error = error {
+        if let error = Tap2iDVerifySDK.shared.verifyMdoc(
+            engagementConfig: .nfcExternalReader,
+            delegate: self,
+            readerDelegate: self
+        ) {
             result(error)
         }
+    }
+
+    // PDF417 barcode from the back of a driver's licence. This path uses the
+    // dedicated classifier API: it is async, returns a typed result directly,
+    // and emits no VerificationStage callbacks.
+    func startPdf417Verification(
+        barcode: String,
+        completion: @escaping (Result<Pdf417VerificationResult, Error>) -> Void
+    ) {
+        Task {
+            do {
+                let request = Pdf417VerificationRequest(pdf417Value: barcode)
+                let result  = try await Tap2iDVerifySDK.shared.verifyPdf417(request: request)
+                await MainActor.run { completion(.success(result)) }
+            } catch {
+                await MainActor.run { completion(.failure(error)) }
+            }
+        }
+    }
+
+    // Re-fetch the reader profile at runtime, without restarting the app.
+    func refreshConfiguration(completion: @escaping (ConfigurationRefreshResult) -> Void) {
+        // Not guaranteed to be called on the main thread.
+        Tap2iDVerifySDK.shared.refreshConfiguration(completion: completion)
     }
 }
 
-// MARK: - Tap2iDVerifySDKDelegate Extension
-// This extension implements the Tap2iDVerifySDKDelegate protocol to handle the verification process
+// MARK: - Tap2iDVerifySDKDelegate
+
 extension TestSDK: Tap2iDVerifySDKDelegate {
 
-    // Called when a verification stage starts
     func onVerificationStageStarted(stage: VerificationStage) {
-        // Placeholder for handling when the verification stage starts
-        // You can add logic for logging, UI updates, etc.
+        // Logging, UI updates, etc.
     }
 
-    // Called when an error occurs during a verification stage
     func onVerificationStageError(stage: VerificationStage?, error: CoreCredenceErrorStruct?) {
-        // Placeholder for handling verification stage errors
-        // You can add error handling logic here
+        // Error handling.
     }
 
-    // Called when a verification stage is completed successfully
     func onVerificationStageCompleted(stage: VerificationStage) {
-        // Placeholder for handling when a verification stage completes
-        // You can add logic for UI updates, etc.
+        // UI updates, etc.
     }
 
-    // Called when the verification process is completed
-    func onVerificationCompleted(result: MdlAttributes, validationResult: [CoreCredenceErrorStruct]) {
-        // Placeholder for handling when the verification is completed
-        // You can access the result (MdlAttributes) and validationResult (errors) for processing
+    func onVerificationCompleted(verificationResult: VerificationResult?) {
+        guard let result = verificationResult else { return }
+        // result.status, result.documents
     }
 }
 
-// MARK: - NfcExternalReaderDelegate Extension
-// This extension implements the NfcExternalReaderDelegate protocol to handle NFC reader events
+// MARK: - NfcExternalReaderDelegate
+
 extension TestSDK: NfcExternalReaderDelegate {
-    
-    // Called when NFC readers are detected
-    func didDetectReaders() {
-        // Placeholder for handling when NFC readers are detected
-        // You can add logic for UI updates or reader selection
-    }
 
-    // Called when the connection to an NFC reader is disconnected
-    func didDisconnectFromReader() {
-        // Placeholder for handling when the NFC reader is disconnected
-        // You can add logic for UI updates, disconnection handling, etc.
-    }
+    func didDetectReaders() { }
 
-    // Called when a smart card is detected by the external NFC reader
-    func didDetectSmartCard() {
-        // Placeholder for handling when a smart card is detected
-        // You can add logic for processing or UI updates
-    }
+    func didDisconnectFromReader() { }
 
-    // Called when the smart card is disconnected
-    func didDisconnectFromSmartCard() {
-        // Placeholder for handling when the smart card is disconnected
-        // You can add logic for cleanup, UI updates, etc.
-    }
+    func didDetectSmartCard() { }
+
+    func didDisconnectFromSmartCard() { }
 }
-
 ```
+
+### Reading a PDF417 result
+
+```swift
+print(result.verdict.rawValue)      // authentic | likelyAuthentic | likelyFraudulent | error
+print(result.confidenceLevel)
+print(result.stateCode ?? "-")
+
+let crypto = result.cryptoVerification
+if crypto.checked {
+    print("signature (\(crypto.authority)): \(crypto.verified ? "valid" : "invalid")")
+} else {
+    print("no verifiable signature on this barcode")
+}
+```
+
+`checked == false` means the barcode carried no verifiable signature — which is not the same as failing one.
+
+Disclosed fields require an `aamva.pdf417` entry in your Verify with Credence profile. Without one you still receive a verdict and confidence score, but no fields.
+
+## Upgrading from 2.0.0
+
+`EngagementConfig.pdf417` has been removed. Replace:
+
+```swift
+// 2.0.0
+verifyMdoc(engagementConfig: .pdf417(value), delegate: self)
+
+// 2.0.1
+let result = try await Tap2iDVerifySDK.shared.verifyPdf417(
+    request: Pdf417VerificationRequest(pdf417Value: value)
+)
+```
+
+The result type changes from `VerificationResult` to `Pdf417VerificationResult`, and results arrive by return value rather than through the delegate.
+
+See also the [simulator architecture](#simulator-architecture) change above.
+
+## Documentation
+
+- [Release Notes](https://github.com/CredenceID/Tap2iD-SDK-iOS/releases)
+- [API Documentation](https://github.com/CredenceID/Tap2iD-SDK-iOS/wiki/Tap2iD-SDK-API-Documentation)
+- [Integration Guide](https://github.com/CredenceID/Tap2iD-SDK-iOS/wiki/Guide-to-Integrate-Tap2iD-iOS-SDK)
+- [Sample App](https://github.com/CredenceID/Tap2iD-SDK-iOS)
+
+---
+
+© 2026 Credence ID, LLC. All rights reserved.
