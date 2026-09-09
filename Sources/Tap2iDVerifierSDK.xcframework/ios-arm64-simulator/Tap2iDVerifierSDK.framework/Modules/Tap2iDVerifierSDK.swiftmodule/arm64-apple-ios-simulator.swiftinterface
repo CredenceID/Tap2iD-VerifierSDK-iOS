@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tap2iDVerifierSDK
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Tap2iDVerifierSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Combine
 import CommonCrypto
 import CoreBluetooth
@@ -19,10 +19,69 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct Pdf417VerificationResult {
+  public let verdict: Tap2iDVerifierSDK.PDF417Verdict
+  public let nativeVerdict: Swift.String
+  public let confidenceLevel: Swift.Int
+  public let stateCode: Swift.String?
+  public let fields: [Swift.String : Any?]
+  public let errors: [Tap2iDVerifierSDK.PDF417ValidationError]
+  public let cryptoVerification: Tap2iDVerifierSDK.CryptoVerification
+}
+public struct CryptoVerification {
+  public let authority: Swift.String
+  public let checked: Swift.Bool
+  public let verified: Swift.Bool
+  public let detail: Swift.String
+  public init(authority: Swift.String, checked: Swift.Bool, verified: Swift.Bool, detail: Swift.String)
+  public static let none: Tap2iDVerifierSDK.CryptoVerification
+}
+public enum PDF417Verdict : Swift.String {
+  case authentic
+  case likelyAuthentic
+  case likelyFraudulent
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PDF417ValidationError {
+  public let code: Swift.Int
+  public let message: Swift.String
+}
+extension Tap2iDVerifierSDK.Pdf417VerificationResult {
+  public func toJsonString() -> Swift.String?
+}
+public struct Pdf417VerificationRequest {
+  public let pdf417Value: Swift.String
+  public init(pdf417Value: Swift.String)
+}
+public enum Pdf417ImplError : Swift.Error {
+  case sdkNotInitialized
+  case classificationFailed
+  case noProfileDefined
+  public static func == (a: Tap2iDVerifierSDK.Pdf417ImplError, b: Tap2iDVerifierSDK.Pdf417ImplError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension Tap2iDVerifierSDK.Pdf417ImplError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var failureReason: Swift.String? {
+    get
+  }
+  public var recoverySuggestion: Swift.String? {
+    get
+  }
+}
 public enum EngagementConfig {
   case nfc
   case qrCode(Swift.String)
-  case pdf417(Swift.String)
   case nfcExternalReader
 }
 public struct CoreCredenceErrorStruct : Swift.Error {
@@ -33,15 +92,9 @@ public struct CoreCredenceErrorStruct : Swift.Error {
   open var lastResultCode: Darwin.OSStatus
   open var accessGroup: Swift.String?
   open var synchronizable: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   open func get(_ key: Swift.String) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   open func getData(_ key: Swift.String) -> Foundation.Data?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   open func getBool(_ key: Swift.String) -> Swift.Bool?
-  #endif
   @discardableResult
   open func delete(_ key: Swift.String) -> Swift.Bool
   @discardableResult
@@ -112,9 +165,7 @@ public enum VerificationStatus : Swift.String {
   case success
   case partialSuccess
   case failure
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -134,9 +185,7 @@ public enum TrustResult : Swift.String {
   case verified
   case untrustedRoot
   case unchecked
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -147,44 +196,34 @@ public enum MsoStatus : Swift.String {
   case notYetValid
   case expired
   case unknown
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 extension Tap2iDVerifierSDK.VerificationResult {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func toJsonString() -> Swift.String?
-  #endif
 }
 extension Swift.String : @retroactive Swift.Error {
 }
 public protocol Tap2iDVerifySDKDelegate : AnyObject {
   func onVerificationStageStarted(stage: Tap2iDVerifierSDK.VerificationStage)
-  #if compiler(>=5.3) && $NonescapableTypes
   func onVerificationStageError(stage: Tap2iDVerifierSDK.VerificationStage?, error: Tap2iDVerifierSDK.CoreCredenceErrorStruct?)
-  #endif
   func onVerificationStageCompleted(stage: Tap2iDVerifierSDK.VerificationStage)
-  #if compiler(>=5.3) && $NonescapableTypes
   func onVerificationCompleted(verificationResult: Tap2iDVerifierSDK.VerificationResult?)
-  #endif
 }
 extension ObjectiveC.NSObject : Any {
 }
 @_hasMissingDesignatedInitializers public class Tap2iDVerifySDK {
   public static let shared: Tap2iDVerifierSDK.Tap2iDVerifySDK
   public func initSdk(config: Tap2iDVerifierSDK.CoreSdkConfig, initResult: @escaping (Tap2iDVerifierSDK.LicenseKeyVerificationResult) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func verifyMdoc(engagementConfig: Tap2iDVerifierSDK.EngagementConfig, delegate: (any Tap2iDVerifierSDK.Tap2iDVerifySDKDelegate)?, readerDelegate: (any Tap2iDVerifierSDK.NfcExternalReaderDelegate)? = nil) -> (any Swift.Error)?
-  #endif
+  public func verifyPdf417(request: Tap2iDVerifierSDK.Pdf417VerificationRequest) async throws -> Tap2iDVerifierSDK.Pdf417VerificationResult
+  public func refreshConfiguration(completion: @escaping (Tap2iDVerifierSDK.ConfigurationRefreshResult) -> Swift.Void)
   public func stopMonitoring()
   public func getSdkVersion() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDeviceIdentifier() -> Swift.String?
-  #endif
   @objc deinit
 }
 public protocol NfcExternalReaderDelegate : AnyObject {
@@ -204,6 +243,26 @@ public struct LicenseKeyVerificationResult {
   public let profileName: Swift.String?
   public let error: (any Swift.Error)?
 }
+public enum ConfigurationRefreshError : Swift.Error {
+  case sdkNotInitialized
+  public static func == (a: Tap2iDVerifierSDK.ConfigurationRefreshError, b: Tap2iDVerifierSDK.ConfigurationRefreshError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct ConfigurationRefreshResult {
+  public let profileName: Swift.String?
+  public let error: (any Swift.Error)?
+  public var isRefreshed: Swift.Bool {
+    get
+  }
+}
+extension Tap2iDVerifierSDK.PDF417Verdict : Swift.Equatable {}
+extension Tap2iDVerifierSDK.PDF417Verdict : Swift.Hashable {}
+extension Tap2iDVerifierSDK.PDF417Verdict : Swift.RawRepresentable {}
+extension Tap2iDVerifierSDK.Pdf417ImplError : Swift.Equatable {}
+extension Tap2iDVerifierSDK.Pdf417ImplError : Swift.Hashable {}
 extension Tap2iDVerifierSDK.VerificationStage : Swift.Equatable {}
 extension Tap2iDVerifierSDK.VerificationStage : Swift.Hashable {}
 extension Tap2iDVerifierSDK.VerificationStatus : Swift.Equatable {}
@@ -217,3 +276,5 @@ extension Tap2iDVerifierSDK.TrustResult : Swift.RawRepresentable {}
 extension Tap2iDVerifierSDK.MsoStatus : Swift.Equatable {}
 extension Tap2iDVerifierSDK.MsoStatus : Swift.Hashable {}
 extension Tap2iDVerifierSDK.MsoStatus : Swift.RawRepresentable {}
+extension Tap2iDVerifierSDK.ConfigurationRefreshError : Swift.Equatable {}
+extension Tap2iDVerifierSDK.ConfigurationRefreshError : Swift.Hashable {}
