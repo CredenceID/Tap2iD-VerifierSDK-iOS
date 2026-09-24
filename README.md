@@ -2,7 +2,7 @@
 
 Swift Package distribution of `Tap2iDVerifierSDK.xcframework`.
 
-**Current release: `2.0.1`**
+**Current release: `2.2.0`**
 
 ## Overview
 
@@ -24,7 +24,7 @@ The Tap2iD SDK complies with the ISO/IEC 18013-5:2021 standard, facilitating dig
    - Go to `File > Add Package Dependencies…`.
    - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-iOS.git`.
 3. **Specify Version**:
-   - Choose **Exact Version** and enter `2.0.1`.
+   - Choose **Exact Version** and enter `2.2.0`.
    - Pin exactly rather than by range, so the binary your app builds against is reproducible.
 4. **Add to Target**:
    - Select the **`Tap2iD-VerifyerSDK-Swift`** library product and add it to your app target.
@@ -213,6 +213,46 @@ if crypto.checked {
 `checked == false` means the barcode carried no verifiable signature — which is not the same as failing one.
 
 Disclosed fields require an `aamva.pdf417` entry in your Verify with Credence profile. Without one you still receive a verdict and confidence score, but no fields.
+
+## Upgrading from 2.0.1
+
+### Date elements are returned as text
+
+Date elements — `birth_date`, `expiry_date`, `issue_date` and the rest — now come back as
+the string the wallet sent, rather than as a `Date`:
+
+```swift
+// 2.0.1
+let dob = attributes["birth_date"] as? Date   // 1971-09-01 00:00:00 +0000
+
+// 2.2.0
+let dob = attributes["birth_date"] as? String // "1971-09-01"
+```
+
+A full-date carries no time, so returning a `Date` forced it onto midnight UTC and every
+consumer rendered the trailing `00:00:00 +0000`. A tdate, conversely, would have lost its
+time if it were reformatted to a day. The original text is faithful to both:
+`"1971-09-01"` for a full-date, `"2020-05-04T10:30:00Z"` for a tdate.
+
+### An element that nests its value under its own name is now read
+
+Some wallets send `{"birth_date": 1004("1971-09-01")}` where the bare tagged date belongs.
+The issuer signs that shape, so it arrives digest-valid and previously failed to parse. The
+nested value is now unwrapped and read, and a warning is logged when that happens.
+
+### Abandoned transactions report a connection timeout
+
+A transaction cancelled or abandoned before it completes now delivers
+`DataRetrievalError.connectionTimeout` through `onVerificationStageError`, and writes an
+error transaction log. Previously a host app calling `stopMonitoring()` directly could end
+the transaction with no error reported at all.
+
+### `CoreCredenceErrorStruct.combinedCode` is now public
+
+It was internal, so host apps could not read the combined error code off the struct they
+were handed. No source change is needed — this only widens access.
+
+The eval-mode watermark now reads `CREDENCE ID`; it was misspelled `CREDNCE ID`.
 
 ## Upgrading from 2.0.0
 
