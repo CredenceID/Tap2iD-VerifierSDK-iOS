@@ -2891,6 +2891,91 @@
           },
           {
             "kind": "Var",
+            "name": "combinedCode",
+            "printedName": "combinedCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivp",
+            "mangledName": "$s17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivp",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivg",
+                "mangledName": "$s17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivg",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivs",
+                "mangledName": "$s17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivs",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivM",
+                "mangledName": "$s17Tap2iDVerifierSDK23CoreCredenceErrorStructV12combinedCodeSivM",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "errorMessage",
             "printedName": "errorMessage",
             "children": [
@@ -13773,7 +13858,7 @@
       "kind": "StringLiteral",
       "offset": 168,
       "length": 7,
-      "value": "\"2.0.1\""
+      "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/PDF417Verification\/Data\/Helpers\/AAMVAHelper.swift",
@@ -14512,15 +14597,22 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/UtilsSDKManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 594,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/UtilsSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 16330,
+      "offset": 17419,
       "length": 9,
       "value": "\"DIGITAL\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/UtilsSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 16360,
+      "offset": 17449,
       "length": 10,
       "value": "\"PHYSICAL\""
     },
@@ -16683,28 +16775,28 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "StringLiteral",
-      "offset": 19596,
+      "offset": 20065,
       "length": 10,
       "value": "\"Document\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 20001,
+      "offset": 20470,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 20044,
+      "offset": 20513,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 20091,
+      "offset": 20560,
       "length": 5,
       "value": "false"
     },

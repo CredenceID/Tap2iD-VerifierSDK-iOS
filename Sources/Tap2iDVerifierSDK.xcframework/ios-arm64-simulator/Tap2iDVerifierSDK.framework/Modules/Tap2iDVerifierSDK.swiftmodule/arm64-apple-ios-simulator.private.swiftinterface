@@ -86,6 +86,7 @@ public enum EngagementConfig {
 }
 public struct CoreCredenceErrorStruct : Swift.Error {
   public var componentCode: Swift.Int
+  public var combinedCode: Swift.Int
   public var errorMessage: Swift.String
 }
 @_hasMissingDesignatedInitializers open class KeychainSwift {
