@@ -25,6 +25,1701 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "ProximityReaderRequest",
+        "printedName": "ProximityReaderRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "display",
+            "printedName": "display",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderRequest.Type) -> (Tap2iDVerifierSDK.ProximityDocumentType, [Tap2iDVerifierSDK.ProximityDisplayElement]) -> Tap2iDVerifierSDK.ProximityReaderRequest",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Tap2iDVerifierSDK.ProximityDocumentType, [Tap2iDVerifierSDK.ProximityDisplayElement]) -> Tap2iDVerifierSDK.ProximityReaderRequest",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderRequest",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest",
+                        "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(document: Tap2iDVerifierSDK.ProximityDocumentType, elements: [Tap2iDVerifierSDK.ProximityDisplayElement])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProximityDocumentType",
+                            "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                            "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[Tap2iDVerifierSDK.ProximityDisplayElement]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProximityDisplayElement",
+                                "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderRequest",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest",
+                        "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO7displayyAcA0D12DocumentTypeO_SayAA0D14DisplayElementOGtcACmF",
+            "mangledName": "$s17Tap2iDVerifierSDK22ProximityReaderRequestO7displayyAcA0D12DocumentTypeO_SayAA0D14DisplayElementOGtcACmF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderRequest.Type) -> Tap2iDVerifierSDK.ProximityReaderRequest",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderRequest",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest",
+                    "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderRequest",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest",
+                        "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO4datayA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK22ProximityReaderRequestO4datayA2CmF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO",
+        "mangledName": "$s17Tap2iDVerifierSDK22ProximityReaderRequestO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityDocumentType",
+        "printedName": "ProximityDocumentType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driversLicense",
+            "printedName": "driversLicense",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDocumentType.Type) -> Tap2iDVerifierSDK.ProximityDocumentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDocumentType",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                    "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDocumentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDocumentType",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                        "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO14driversLicenseyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK21ProximityDocumentTypeO14driversLicenseyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "nationalIDCard",
+            "printedName": "nationalIDCard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDocumentType.Type) -> (Foundation.Locale.Region) -> Tap2iDVerifierSDK.ProximityDocumentType",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Locale.Region) -> Tap2iDVerifierSDK.ProximityDocumentType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDocumentType",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                        "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(region: Foundation.Locale.Region)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Region",
+                            "printedName": "Foundation.Locale.Region",
+                            "usr": "s:10Foundation6LocaleV6RegionV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDocumentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDocumentType",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                        "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO14nationalIDCardyAC10Foundation6LocaleV6RegionV_tcACmF",
+            "mangledName": "$s17Tap2iDVerifierSDK21ProximityDocumentTypeO14nationalIDCardyAC10Foundation6LocaleV6RegionV_tcACmF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "photoID",
+            "printedName": "photoID",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDocumentType.Type) -> Tap2iDVerifierSDK.ProximityDocumentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDocumentType",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                    "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDocumentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDocumentType",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                        "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO7photoIDyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK21ProximityDocumentTypeO7photoIDyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDocumentType",
+                "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDocumentType",
+                "printedName": "Tap2iDVerifierSDK.ProximityDocumentType",
+                "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17Tap2iDVerifierSDK21ProximityDocumentTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tap2iDVerifierSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK21ProximityDocumentTypeO",
+        "mangledName": "$s17Tap2iDVerifierSDK21ProximityDocumentTypeO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityDisplayElement",
+        "printedName": "ProximityDisplayElement",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "givenName",
+            "printedName": "givenName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayElement.Type) -> Tap2iDVerifierSDK.ProximityDisplayElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayElement",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayElement",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO9givenNameyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO9givenNameyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "familyName",
+            "printedName": "familyName",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayElement.Type) -> Tap2iDVerifierSDK.ProximityDisplayElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayElement",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayElement",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO10familyNameyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO10familyNameyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "age",
+            "printedName": "age",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayElement.Type) -> Tap2iDVerifierSDK.ProximityDisplayElement",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayElement",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayElement",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO3ageyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO3ageyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "ageAtLeast",
+            "printedName": "ageAtLeast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayElement.Type) -> (Swift.Int) -> Tap2iDVerifierSDK.ProximityDisplayElement",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> Tap2iDVerifierSDK.ProximityDisplayElement",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayElement",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayElement",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO10ageAtLeastyACSicACmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO10ageAtLeastyACSicACmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO9hashValueSivp",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO9hashValueSivp",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO9hashValueSivg",
+                "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO9hashValueSivg",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO4hash4intoys6HasherVz_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDisplayElement",
+                "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDisplayElement",
+                "printedName": "Tap2iDVerifierSDK.ProximityDisplayElement",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tap2iDVerifierSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayElementO",
+        "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayElementO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityDisplayOutcome",
+        "printedName": "ProximityDisplayOutcome",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "approved",
+            "printedName": "approved",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayOutcome.Type) -> Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayOutcome",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayOutcome",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO8approvedyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO8approvedyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "rejected",
+            "printedName": "rejected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayOutcome.Type) -> Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayOutcome",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayOutcome",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO8rejectedyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO8rejectedyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "dismissed",
+            "printedName": "dismissed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityDisplayOutcome.Type) -> Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityDisplayOutcome",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                    "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityDisplayOutcome",
+                        "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9dismissedyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9dismissedyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDisplayOutcome",
+                "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDisplayOutcome",
+                "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tap2iDVerifierSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9hashValueSivp",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9hashValueSivp",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9hashValueSivg",
+                "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO9hashValueSivg",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO4hash4intoys6HasherVz_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO",
+        "mangledName": "$s17Tap2iDVerifierSDK23ProximityDisplayOutcomeO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityReaderStage",
+        "printedName": "ProximityReaderStage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "PREPARE_READER",
+            "printedName": "PREPARE_READER",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderStage.Type) -> Tap2iDVerifierSDK.ProximityReaderStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderStage",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderStage",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO14PREPARE_READERyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO14PREPARE_READERyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "REQUEST_DOCUMENT",
+            "printedName": "REQUEST_DOCUMENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderStage.Type) -> Tap2iDVerifierSDK.ProximityReaderStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderStage",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderStage",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO16REQUEST_DOCUMENTyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO16REQUEST_DOCUMENTyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "VALIDATE_RESPONSE",
+            "printedName": "VALIDATE_RESPONSE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderStage.Type) -> Tap2iDVerifierSDK.ProximityReaderStage",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderStage",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderStage",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO17VALIDATE_RESPONSEyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO17VALIDATE_RESPONSEyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderStage",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderStage",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tap2iDVerifierSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO9hashValueSivp",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO9hashValueSivp",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO9hashValueSivg",
+                "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO9hashValueSivg",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO4hash4intoys6HasherVz_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO",
+        "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderStageO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityReaderError",
+        "printedName": "ProximityReaderError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotInitialized",
+            "printedName": "sdkNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Tap2iDVerifierSDK.ProximityReaderError.Type) -> Tap2iDVerifierSDK.ProximityReaderError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderError",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderError",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProximityReaderError",
+                        "printedName": "Tap2iDVerifierSDK.ProximityReaderError",
+                        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO17sdkNotInitializedyA2CmF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO17sdkNotInitializedyA2CmF",
+            "moduleName": "Tap2iDVerifierSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO9hashValueSivp",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO9hashValueSivp",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO9hashValueSivg",
+                "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO9hashValueSivg",
+                "moduleName": "Tap2iDVerifierSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO4hash4intoys6HasherVz_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderError",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderError",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderError",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderError",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO2eeoiySbAC_ACtFZ",
+            "moduleName": "Tap2iDVerifierSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO",
+        "mangledName": "$s17Tap2iDVerifierSDK20ProximityReaderErrorO",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProximityReaderDelegate",
+        "printedName": "ProximityReaderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onProximityReaderStageStarted",
+            "printedName": "onProximityReaderStageStarted(stage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderStage",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE12StageStarted5stageyAA0deH0O_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE12StageStarted5stageyAA0deH0O_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "sugared_genericSig": "<Self where Self : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onProximityReaderStageCompleted",
+            "printedName": "onProximityReaderStageCompleted(stage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderStage",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE14StageCompleted5stageyAA0deH0O_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE14StageCompleted5stageyAA0deH0O_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "sugared_genericSig": "<Self where Self : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onProximityReaderError",
+            "printedName": "onProximityReaderError(stage:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderStage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderStage",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderStage",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderStageO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CoreCredenceErrorStruct",
+                "printedName": "Tap2iDVerifierSDK.CoreCredenceErrorStruct",
+                "usr": "s:17Tap2iDVerifierSDK23CoreCredenceErrorStructV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE5Error5stage5erroryAA0dE5StageOSg_AA012CoreCredenceH6StructVtF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP02ondE5Error5stage5erroryAA0dE5StageOSg_AA012CoreCredenceH6StructVtF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "sugared_genericSig": "<Self where Self : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDisplayRequestCompleted",
+            "printedName": "onDisplayRequestCompleted(outcome:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityDisplayOutcome",
+                "printedName": "Tap2iDVerifierSDK.ProximityDisplayOutcome",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityDisplayOutcomeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP25onDisplayRequestCompleted7outcomeyAA0dH7OutcomeO_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP25onDisplayRequestCompleted7outcomeyAA0dH7OutcomeO_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "sugared_genericSig": "<Self where Self : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onVerificationCompleted",
+            "printedName": "onVerificationCompleted(verificationResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VerificationResult",
+                "printedName": "Tap2iDVerifierSDK.VerificationResult",
+                "usr": "s:17Tap2iDVerifierSDK18VerificationResultV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP23onVerificationCompleted18verificationResultyAA0hK0V_tF",
+            "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP23onVerificationCompleted18verificationResultyAA0hK0V_tF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "sugared_genericSig": "<Self where Self : Tap2iDVerifierSDK.ProximityReaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP",
+        "mangledName": "$s17Tap2iDVerifierSDK23ProximityReaderDelegateP",
+        "moduleName": "Tap2iDVerifierSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Tap2iDVerifierSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -8474,6 +10169,70 @@
           },
           {
             "kind": "Function",
+            "name": "verifyMdocWithEntitlement",
+            "printedName": "verifyMdocWithEntitlement(request:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderError?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProximityReaderError",
+                    "printedName": "Tap2iDVerifierSDK.ProximityReaderError",
+                    "usr": "s:17Tap2iDVerifierSDK20ProximityReaderErrorO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderRequest",
+                "printedName": "Tap2iDVerifierSDK.ProximityReaderRequest",
+                "usr": "s:17Tap2iDVerifierSDK22ProximityReaderRequestO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProximityReaderDelegate",
+                "printedName": "any Tap2iDVerifierSDK.ProximityReaderDelegate",
+                "usr": "s:17Tap2iDVerifierSDK23ProximityReaderDelegateP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK0a7DVerifyC0C25verifyMdocWithEntitlement7request8delegateAA20ProximityReaderErrorOSgAA0kL7RequestO_AA0kL8Delegate_ptF",
+            "mangledName": "$s17Tap2iDVerifierSDK0a7DVerifyC0C25verifyMdocWithEntitlement7request8delegateAA20ProximityReaderErrorOSgAA0kL7RequestO_AA0kL8Delegate_ptF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isProximityReaderSupported",
+            "printedName": "isProximityReaderSupported()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17Tap2iDVerifierSDK0a7DVerifyC0C26isProximityReaderSupportedSbyF",
+            "mangledName": "$s17Tap2iDVerifierSDK0a7DVerifyC0C26isProximityReaderSupportedSbyF",
+            "moduleName": "Tap2iDVerifierSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "verifyPdf417",
             "printedName": "verifyPdf417(request:)",
             "children": [
@@ -10486,6 +12245,468 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityRawResponse.swift",
+      "kind": "Array",
+      "offset": 736,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityRawResponse.swift",
+      "kind": "Array",
+      "offset": 785,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "StringLiteral",
+      "offset": 264,
+      "length": 52,
+      "value": "\"com.apple.developer.proximity-reader.identity.read\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "StringLiteral",
+      "offset": 349,
+      "length": 17,
+      "value": "\"drivers-license\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "Dictionary",
+      "offset": 2151,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4944,
+      "length": 11,
+      "value": "0xFEEDFACF"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4994,
+      "length": 11,
+      "value": "0xCAFEBABE"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5046,
+      "length": 11,
+      "value": "0xCAFEBABF"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5100,
+      "length": 11,
+      "value": "0x0100000C"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5152,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5194,
+      "length": 4,
+      "value": "0x19"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5242,
+      "length": 4,
+      "value": "0x1D"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5291,
+      "length": 11,
+      "value": "0xFADE0CC0"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5354,
+      "length": 11,
+      "value": "0xFADE7171"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderEntitlement.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5412,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/GetReaderTokenUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityRequestBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 467,
+      "length": 23,
+      "value": "\"org.iso.18013.5.1.mDL\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityRequestBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 521,
+      "length": 19,
+      "value": "\"org.iso.18013.5.1\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityRequestBuilder.swift",
+      "kind": "StringLiteral",
+      "offset": 573,
+      "length": 25,
+      "value": "\"org.iso.18013.5.1.aamva\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3016,
+      "length": 12,
+      "value": "\"given_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3050,
+      "length": 13,
+      "value": "\"family_name\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3086,
+      "length": 10,
+      "value": "\"portrait\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3117,
+      "length": 14,
+      "value": "\"age_in_years\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3147,
+      "length": 12,
+      "value": "\"birth_date\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3183,
+      "length": 5,
+      "value": "\"sex\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3204,
+      "length": 18,
+      "value": "\"resident_address\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3242,
+      "length": 15,
+      "value": "\"resident_city\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3277,
+      "length": 16,
+      "value": "\"resident_state\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3313,
+      "length": 22,
+      "value": "\"resident_postal_code\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3355,
+      "length": 18,
+      "value": "\"resident_country\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3393,
+      "length": 8,
+      "value": "\"height\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3420,
+      "length": 8,
+      "value": "\"weight\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3447,
+      "length": 12,
+      "value": "\"eye_colour\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3480,
+      "length": 13,
+      "value": "\"hair_colour\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3515,
+      "length": 22,
+      "value": "\"signature_usual_mark\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3568,
+      "length": 13,
+      "value": "\"nationality\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3605,
+      "length": 13,
+      "value": "\"birth_place\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3643,
+      "length": 19,
+      "value": "\"issuing_authority\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3691,
+      "length": 22,
+      "value": "\"issuing_jurisdiction\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3742,
+      "length": 17,
+      "value": "\"issuing_country\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3788,
+      "length": 20,
+      "value": "\"driving_privileges\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3838,
+      "length": 17,
+      "value": "\"document_number\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3882,
+      "length": 12,
+      "value": "\"issue_date\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 3924,
+      "length": 13,
+      "value": "\"expiry_date\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4051,
+      "length": 13,
+      "value": "\"organ_donor\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4093,
+      "length": 9,
+      "value": "\"veteran\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4128,
+      "length": 16,
+      "value": "\"DHS_compliance\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ProximityProfileMapper.swift",
+      "kind": "StringLiteral",
+      "offset": 4184,
+      "length": 29,
+      "value": "\"domestic_driving_privileges\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 3728,
+      "length": 5,
+      "value": "\"DER\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 3792,
+      "length": 6,
+      "value": "\"x963\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 3858,
+      "length": 5,
+      "value": "\"raw\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 3922,
+      "length": 5,
+      "value": "\"PEM\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4019,
+      "length": 10,
+      "value": "\"COSE_Key\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4217,
+      "length": 53,
+      "value": "\"Reader key: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4249,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4263,
+      "length": 5,
+      "value": "\" bytes\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4374,
+      "length": 81,
+      "value": "\"Reader key of \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "StringLiteral",
+      "offset": 4401,
+      "length": 5,
+      "value": "\" bytes is not a P-256 private key in a known encoding\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4608,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4635,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4661,
+      "length": 2,
+      "value": "-2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4687,
+      "length": 2,
+      "value": "-3"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4713,
+      "length": 2,
+      "value": "-4"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4741,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/VerifyRawMdocUseCase.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4769,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/Tap2ID\/ProximityReader\/ReaderTokenRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1049,
+      "length": 3,
+      "value": "409"
+    },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/BarcodeClassification\/Domain\/DataProfileFilter.swift",
       "kind": "StringLiteral",
@@ -12652,854 +14873,1036 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 16664,
+      "offset": 16665,
+      "length": 60,
+      "value": "\"The feature is unsupported as the iOS version is below 18.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 17092,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17162,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 17223,
+      "length": 60,
+      "value": "\"The feature is unsupported as the iOS version is below 26.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 17650,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 17720,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 17780,
       "length": 42,
       "value": "\"The mobile document request was canceled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 16763,
+      "offset": 17879,
       "length": 42,
       "value": "\"The mobile document request was canceled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 16872,
+      "offset": 17988,
       "length": 56,
       "value": "\"TaptoPresent: The mobile document request was canceled\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 16984,
+      "offset": 18100,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 17043,
+      "offset": 18159,
       "length": 3,
       "value": "121"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 17103,
+      "offset": 18219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 17632,
+      "offset": 18748,
       "length": 42,
       "value": "\"The request is invalid. Please try again\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 17722,
+      "offset": 18838,
       "length": 42,
       "value": "\"The request is invalid. Please try again\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 17822,
+      "offset": 18938,
       "length": 38,
       "value": "\"TaptoPresent: The request is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 17907,
+      "offset": 19023,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 17957,
+      "offset": 19073,
       "length": 3,
       "value": "122"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 18008,
+      "offset": 19124,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 18476,
+      "offset": 19592,
       "length": 41,
       "value": "\"The response from holder app is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 18567,
+      "offset": 19683,
       "length": 41,
       "value": "\"The response from holder app is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 18668,
+      "offset": 19784,
       "length": 55,
       "value": "\"TaptoPresent: The response from holder app is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 18772,
+      "offset": 19888,
       "length": 2,
       "value": "23"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 18824,
+      "offset": 19940,
       "length": 3,
       "value": "123"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 18877,
+      "offset": 19993,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 19361,
+      "offset": 20477,
       "length": 56,
       "value": "\"The provided reader token for framework’s is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 19469,
+      "offset": 20585,
       "length": 56,
       "value": "\"The provided reader token for framework’s is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 19587,
+      "offset": 20703,
       "length": 70,
       "value": "\"TaptoPresent: The provided reader token for framework’s is invalid\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 19708,
+      "offset": 20824,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 19762,
+      "offset": 20878,
       "length": 3,
       "value": "124"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 19817,
+      "offset": 20933,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 20313,
+      "offset": 21429,
       "length": 49,
       "value": "\"The system is unable to connect to the network.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 20412,
+      "offset": 21528,
       "length": 49,
       "value": "\"The system is unable to connect to the network.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 20521,
+      "offset": 21637,
       "length": 63,
       "value": "\"TaptoPresent: The system is unable to connect to the network.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 20633,
+      "offset": 21749,
       "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 20685,
+      "offset": 21801,
       "length": 3,
       "value": "125"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 20738,
+      "offset": 21854,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 21231,
+      "offset": 22347,
       "length": 67,
       "value": "\"The device is not authorized to make the mobile document request.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 21358,
+      "offset": 22474,
       "length": 67,
       "value": "\"The device is not authorized to make the mobile document request.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 21495,
+      "offset": 22611,
       "length": 80,
       "value": "\"TaptoPresent:The device is not authorized to make the mobile document request.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 21634,
+      "offset": 22750,
       "length": 2,
       "value": "26"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 21696,
+      "offset": 22812,
       "length": 3,
       "value": "126"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 21759,
+      "offset": 22875,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 22321,
+      "offset": 23437,
       "length": 65,
       "value": "\"Mobile document reading is not supported on the current device.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 22445,
+      "offset": 23561,
       "length": 65,
       "value": "\"Mobile document reading is not supported on the current device.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 22579,
+      "offset": 23695,
       "length": 79,
       "value": "\"TaptoPresent: Mobile document reading is not supported on the current device.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 22716,
+      "offset": 23832,
       "length": 2,
       "value": "27"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 22777,
+      "offset": 23893,
       "length": 3,
       "value": "127"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 22839,
+      "offset": 23955,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 23392,
+      "offset": 24508,
       "length": 62,
       "value": "\"The mobile document reader service is currently unavailable.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 23511,
+      "offset": 24627,
       "length": 62,
       "value": "\"The mobile document reader service is currently unavailable.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 23640,
+      "offset": 24756,
       "length": 76,
       "value": "\"TaptoPresent: The mobile document reader service is currently unavailable.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 23772,
+      "offset": 24888,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 23831,
+      "offset": 24947,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 23891,
+      "offset": 25007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 24427,
+      "offset": 25543,
       "length": 89,
       "value": "\"The current reader session has expired. Please refresh the page or start a new session.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 24570,
+      "offset": 25686,
       "length": 89,
       "value": "\"The current reader session has expired. Please refresh the page or start a new session.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 24723,
+      "offset": 25839,
       "length": 103,
       "value": "\"TaptoPresent: The current reader session has expired. Please refresh the page or start a new session.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 24879,
+      "offset": 25995,
       "length": 2,
       "value": "29"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 24935,
+      "offset": 26051,
       "length": 3,
       "value": "129"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 24992,
+      "offset": 26108,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 25499,
+      "offset": 26615,
       "length": 55,
       "value": "\"The system is currently busy. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 25600,
+      "offset": 26716,
       "length": 55,
       "value": "\"The system is currently busy. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 25711,
+      "offset": 26827,
       "length": 69,
       "value": "\"TaptoPresent: The system is currently busy. Please try again later.\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 25825,
+      "offset": 26941,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 25873,
+      "offset": 26989,
       "length": 3,
       "value": "130"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 25922,
+      "offset": 27038,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 26377,
+      "offset": 27493,
       "length": 124,
       "value": "\"It looks like something went wrong with the system. The framework encountered a problem which the system can’t interpret\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 26551,
+      "offset": 27667,
       "length": 124,
       "value": "\"It looks like something went wrong with the system. The framework encountered a problem which the system can’t interpret\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 26735,
+      "offset": 27851,
       "length": 138,
       "value": "\"TaptoPresent: It looks like something went wrong with the system. The framework encountered a problem which the system can’t interpret\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 26922,
+      "offset": 28038,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 26974,
+      "offset": 28090,
       "length": 3,
       "value": "131"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 27027,
+      "offset": 28143,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 27566,
+      "offset": 28633,
+      "length": 125,
+      "value": "\"The reader token could not be obtained. Please check the network connection and the Tap to Present ID setup of the account.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28961,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 28979,
+      "length": 3,
+      "value": "132"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 29058,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 29127,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 29186,
+      "length": 96,
+      "value": "\"The verification profile has no driver's license attribute that Tap to Present ID can request.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 29991,
+      "length": 64,
+      "value": "\"This app does not have the Tap to Present ID data entitlement.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30341,
+      "length": 2,
+      "value": "35"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30359,
+      "length": 3,
+      "value": "135"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 30431,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 30493,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 30544,
+      "length": 119,
+      "value": "\"This account is not registered with Apple for Tap to Present ID. Add the Brand ID and Key ID in Verify with Credence.\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30946,
+      "length": 2,
+      "value": "36"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 30964,
+      "length": 3,
+      "value": "136"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 31034,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31094,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31302,
+      "length": 2,
+      "value": "33"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31320,
+      "length": 3,
+      "value": "133"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 31398,
+      "length": 16,
+      "value": "\"TaptoPresent: \""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "BooleanLiteral",
+      "offset": 31466,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
+      "kind": "StringLiteral",
+      "offset": 31575,
       "length": 16,
       "value": "\"Data Retrieval\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 27627,
+      "offset": 31636,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 27676,
+      "offset": 31685,
       "length": 26,
       "value": "\"Unable to initialize BLE\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 27754,
+      "offset": 31763,
       "length": 40,
       "value": "\"Please restart Bluetooth and try again\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 27856,
+      "offset": 31865,
       "length": 26,
       "value": "\"Unable to initialize BLE\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 27933,
+      "offset": 31942,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 27987,
+      "offset": 31996,
       "length": 3,
       "value": "211"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 28042,
+      "offset": 32051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 28536,
+      "offset": 32545,
       "length": 22,
       "value": "\"BLE connection Error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 28607,
+      "offset": 32616,
       "length": 47,
       "value": "\"Bluetooth connection failed. Please try again\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 28713,
+      "offset": 32722,
       "length": 22,
       "value": "\"BLE connection Error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 28783,
+      "offset": 32792,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 28834,
+      "offset": 32843,
       "length": 3,
       "value": "212"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 28886,
+      "offset": 32895,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 29355,
+      "offset": 33364,
       "length": 17,
       "value": "\"BLE L2CAP Error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 29416,
+      "offset": 33425,
       "length": 47,
       "value": "\"Bluetooth connection failed. Please try again\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 29517,
+      "offset": 33526,
       "length": 17,
       "value": "\"BLE L2CAP Error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 29577,
+      "offset": 33586,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 29623,
+      "offset": 33632,
       "length": 3,
       "value": "213"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 29670,
+      "offset": 33679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 30107,
+      "offset": 34116,
       "length": 20,
       "value": "\"Connection Timeout\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 30175,
+      "offset": 34184,
       "length": 47,
       "value": "\"Connection timed out. Keep your device nearby\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 30280,
+      "offset": 34289,
       "length": 20,
       "value": "\"Connection Timeout\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 30347,
+      "offset": 34356,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 30397,
+      "offset": 34406,
       "length": 3,
       "value": "214"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 30448,
+      "offset": 34457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 30906,
+      "offset": 34915,
       "length": 13,
       "value": "\"Invalid mDL\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 30960,
+      "offset": 34969,
       "length": 38,
       "value": "\"Invalid mDL. Please scan a valid mDL\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 31049,
+      "offset": 35058,
       "length": 13,
       "value": "\"Invalid mDL\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 31102,
+      "offset": 35111,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 31145,
+      "offset": 35154,
       "length": 3,
       "value": "215"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 31189,
+      "offset": 35198,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 31607,
+      "offset": 35616,
       "length": 24,
       "value": "\"Consent denied for all\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 31681,
+      "offset": 35690,
       "length": 54,
       "value": "\"Please provide consent to share driving license data\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 31795,
+      "offset": 35804,
       "length": 24,
       "value": "\"Consent denied for all\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 31868,
+      "offset": 35877,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 31920,
+      "offset": 35929,
       "length": 3,
       "value": "216"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 31973,
+      "offset": 35982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 32459,
+      "offset": 36468,
       "length": 42,
       "value": "\"Data retrieval failed with unknown error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 32556,
+      "offset": 36565,
       "length": 42,
       "value": "\"Data retrieval failed with unknown error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 32663,
+      "offset": 36672,
       "length": 42,
       "value": "\"Data retrieval failed with unknown error\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 32759,
+      "offset": 36768,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 32816,
+      "offset": 36825,
       "length": 3,
       "value": "218"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 32875,
+      "offset": 36884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 33384,
+      "offset": 37393,
       "length": 72,
       "value": "\"Invalid CBOR : There is some issue with decrypting databytes with CBOR\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 33498,
+      "offset": 37507,
       "length": 72,
       "value": "\"Invalid CBOR : There is some issue with decrypting databytes with CBOR\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 33622,
+      "offset": 37631,
       "length": 72,
       "value": "\"Invalid CBOR : There is some issue with decrypting databytes with CBOR\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 33735,
+      "offset": 37744,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 33779,
+      "offset": 37788,
       "length": 3,
       "value": "220"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 33825,
+      "offset": 37834,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 34250,
+      "offset": 38259,
       "length": 65,
       "value": "\"Consent denied for all attributes when no attribute is returned\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 34364,
+      "offset": 38373,
       "length": 45,
       "value": "\"Please provide consent for sharing mDL data\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "StringLiteral",
-      "offset": 34468,
+      "offset": 38477,
       "length": 35,
       "value": "\"Consent denied for all attributes\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 34551,
+      "offset": 38560,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "IntegerLiteral",
-      "offset": 34602,
+      "offset": 38611,
       "length": 3,
       "value": "219"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/Utils\/Others.swift",
       "kind": "BooleanLiteral",
-      "offset": 34655,
+      "offset": 38664,
       "length": 5,
       "value": "false"
     },
@@ -13858,7 +16261,7 @@
       "kind": "StringLiteral",
       "offset": 168,
       "length": 7,
-      "value": "\"2.2.0\""
+      "value": "\"2.3.0\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/PDF417Verification\/Data\/Helpers\/AAMVAHelper.swift",
@@ -14240,50 +16643,57 @@
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 30,
+      "value": "\"device\/proximityReader\/token\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1407,
+      "offset": 1479,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1437,
+      "offset": 1509,
       "length": 12,
       "value": "\"Standalone\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1517,
+      "offset": 1589,
       "length": 15,
       "value": "\"X-Device-Type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1572,
+      "offset": 1644,
       "length": 9,
       "value": "\"iOS-SDK\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1648,
+      "offset": 1720,
       "length": 15,
       "value": "\"X-App-Version\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1774,
+      "offset": 1846,
       "length": 20,
       "value": "\"X-OS-Build-Version\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1941,
+      "offset": 2013,
       "length": 1,
       "value": "5"
     },
@@ -14605,14 +17015,14 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/UtilsSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 17419,
+      "offset": 18014,
       "length": 9,
       "value": "\"DIGITAL\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/UtilsSDKManager.swift",
       "kind": "StringLiteral",
-      "offset": 17449,
+      "offset": 18044,
       "length": 10,
       "value": "\"PHYSICAL\""
     },
@@ -16761,42 +19171,42 @@
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "StringLiteral",
-      "offset": 3882,
+      "offset": 3777,
       "length": 16,
       "value": "\"DeviceResponse\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 4059,
+      "offset": 3954,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "StringLiteral",
-      "offset": 20065,
+      "offset": 20625,
       "length": 10,
       "value": "\"Document\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 20470,
+      "offset": 21030,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 20513,
+      "offset": 21073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Core\/DeviceResponseParser\/DeviceResponseParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 20560,
+      "offset": 21120,
       "length": 5,
       "value": "false"
     },

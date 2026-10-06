@@ -11,6 +11,7 @@ import CryptoKit
 import CryptoTokenKit
 import Foundation
 import OSLog
+import ProximityReader
 import Security
 import Swift
 import SystemConfiguration
@@ -19,6 +20,62 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum ProximityReaderRequest {
+  case display(document: Tap2iDVerifierSDK.ProximityDocumentType, elements: [Tap2iDVerifierSDK.ProximityDisplayElement])
+  case data
+}
+public enum ProximityDocumentType : Swift.Equatable {
+  case driversLicense
+  case nationalIDCard(region: Foundation.Locale.Region)
+  case photoID
+  public static func == (a: Tap2iDVerifierSDK.ProximityDocumentType, b: Tap2iDVerifierSDK.ProximityDocumentType) -> Swift.Bool
+}
+public enum ProximityDisplayElement : Swift.Hashable {
+  case givenName
+  case familyName
+  case age
+  case ageAtLeast(Swift.Int)
+  public static func == (a: Tap2iDVerifierSDK.ProximityDisplayElement, b: Tap2iDVerifierSDK.ProximityDisplayElement) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ProximityDisplayOutcome {
+  case approved
+  case rejected
+  case dismissed
+  public static func == (a: Tap2iDVerifierSDK.ProximityDisplayOutcome, b: Tap2iDVerifierSDK.ProximityDisplayOutcome) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ProximityReaderStage {
+  case PREPARE_READER
+  case REQUEST_DOCUMENT
+  case VALIDATE_RESPONSE
+  public static func == (a: Tap2iDVerifierSDK.ProximityReaderStage, b: Tap2iDVerifierSDK.ProximityReaderStage) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ProximityReaderError : Swift.Error, Swift.Equatable {
+  case sdkNotInitialized
+  public static func == (a: Tap2iDVerifierSDK.ProximityReaderError, b: Tap2iDVerifierSDK.ProximityReaderError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ProximityReaderDelegate : AnyObject {
+  func onProximityReaderStageStarted(stage: Tap2iDVerifierSDK.ProximityReaderStage)
+  func onProximityReaderStageCompleted(stage: Tap2iDVerifierSDK.ProximityReaderStage)
+  func onProximityReaderError(stage: Tap2iDVerifierSDK.ProximityReaderStage?, error: Tap2iDVerifierSDK.CoreCredenceErrorStruct)
+  func onDisplayRequestCompleted(outcome: Tap2iDVerifierSDK.ProximityDisplayOutcome)
+  func onVerificationCompleted(verificationResult: Tap2iDVerifierSDK.VerificationResult)
+}
 public struct Pdf417VerificationResult {
   public let verdict: Tap2iDVerifierSDK.PDF417Verdict
   public let nativeVerdict: Swift.String
@@ -220,6 +277,8 @@ extension ObjectiveC.NSObject : Any {
   public static let shared: Tap2iDVerifierSDK.Tap2iDVerifySDK
   public func initSdk(config: Tap2iDVerifierSDK.CoreSdkConfig, initResult: @escaping (Tap2iDVerifierSDK.LicenseKeyVerificationResult) -> Swift.Void)
   public func verifyMdoc(engagementConfig: Tap2iDVerifierSDK.EngagementConfig, delegate: (any Tap2iDVerifierSDK.Tap2iDVerifySDKDelegate)?, readerDelegate: (any Tap2iDVerifierSDK.NfcExternalReaderDelegate)? = nil) -> (any Swift.Error)?
+  public func verifyMdocWithEntitlement(request: Tap2iDVerifierSDK.ProximityReaderRequest, delegate: any Tap2iDVerifierSDK.ProximityReaderDelegate) -> Tap2iDVerifierSDK.ProximityReaderError?
+  public func isProximityReaderSupported() -> Swift.Bool
   public func verifyPdf417(request: Tap2iDVerifierSDK.Pdf417VerificationRequest) async throws -> Tap2iDVerifierSDK.Pdf417VerificationResult
   public func refreshConfiguration(completion: @escaping (Tap2iDVerifierSDK.ConfigurationRefreshResult) -> Swift.Void)
   public func stopMonitoring()
@@ -259,6 +318,11 @@ public struct ConfigurationRefreshResult {
     get
   }
 }
+extension Tap2iDVerifierSDK.ProximityDisplayOutcome : Swift.Equatable {}
+extension Tap2iDVerifierSDK.ProximityDisplayOutcome : Swift.Hashable {}
+extension Tap2iDVerifierSDK.ProximityReaderStage : Swift.Equatable {}
+extension Tap2iDVerifierSDK.ProximityReaderStage : Swift.Hashable {}
+extension Tap2iDVerifierSDK.ProximityReaderError : Swift.Hashable {}
 extension Tap2iDVerifierSDK.PDF417Verdict : Swift.Equatable {}
 extension Tap2iDVerifierSDK.PDF417Verdict : Swift.Hashable {}
 extension Tap2iDVerifierSDK.PDF417Verdict : Swift.RawRepresentable {}
