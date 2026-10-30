@@ -16261,7 +16261,7 @@
       "kind": "StringLiteral",
       "offset": 168,
       "length": 7,
-      "value": "\"2.3.0\""
+      "value": "\"2.3.1\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/Document\/PDF417Verification\/Data\/Helpers\/AAMVAHelper.swift",
@@ -16631,69 +16631,69 @@
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
       "offset": 1276,
-      "length": 42,
-      "value": "\"\/relyingParty\/getDeviceTrustMgmtSettings\""
+      "length": 41,
+      "value": "\"relyingParty\/getDeviceTrustMgmtSettings\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1353,
+      "offset": 1352,
       "length": 22,
       "value": "\"sdk\/verifyLicenseKey\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1417,
+      "offset": 1416,
       "length": 30,
       "value": "\"device\/proximityReader\/token\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1479,
+      "offset": 1478,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1509,
+      "offset": 1508,
       "length": 12,
       "value": "\"Standalone\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1589,
+      "offset": 1588,
       "length": 15,
       "value": "\"X-Device-Type\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1644,
+      "offset": 1643,
       "length": 9,
       "value": "\"iOS-SDK\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1720,
+      "offset": 1719,
       "length": 15,
       "value": "\"X-App-Version\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1846,
+      "offset": 1845,
       "length": 20,
       "value": "\"X-OS-Build-Version\""
     },
     {
       "filePath": "\/Users\/ec2-user\/jenkins\/workspace\/Tap2iDVerifierSDK-iOS_release\/Tap2iDVerifierSDK\/CIdentitySwift\/Utils\/API\/APIClient\/ApiConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2013,
+      "offset": 2012,
       "length": 1,
       "value": "5"
     },
