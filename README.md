@@ -2,7 +2,7 @@
 
 Swift Package distribution of `Tap2iDVerifierSDK.xcframework`.
 
-**Current release: `2.3.0`**
+**Current release: `2.3.1`**
 
 ## Overview
 
@@ -24,7 +24,7 @@ The Tap2iD SDK complies with the ISO/IEC 18013-5:2021 standard, facilitating dig
    - Go to `File > Add Package Dependencies…`.
    - Enter `https://github.com/CredenceID/Tap2iD-VerifierSDK-iOS.git`.
 3. **Specify Version**:
-   - Choose **Exact Version** and enter `2.3.0`.
+   - Choose **Exact Version** and enter `2.3.1`.
    - Pin exactly rather than by range, so the binary your app builds against is reproducible.
 4. **Add to Target**:
    - Select the **`Tap2iD-VerifyerSDK-Swift`** library product and add it to your app target.
